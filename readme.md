@@ -1,18 +1,19 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](./gh/cover.png)
 
-# WTF Webpack Starter Kit 
+# General info
 
-Simple toolkit for your static websites development.
+Hydrapp - app for counting your drinking water per day.
+
+## Languages
+
+* HTML 5
+* CSS 3
+* JavaScript ECMAScript 2015+ (ES6+)
 
 ## How to use it?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Clone it to your computer, go to the project directory in console and type `npm install`.
 
-## Available scripts
+## Available script
 
 `npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
-
