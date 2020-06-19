@@ -1,16 +1,19 @@
 ![cover](./gh/cover.png)
 
-# General info
+# General info:
 
-Hydrapp - app counts the number of glasses of water consumed.
+Hydrapp - simple PWA application using local storage so that you don't forget how many glasses of water you have drunk today.
 
-## Languages
+If you want to know how it looks like click here ➡ [Hydrapp](https://patryk-makarewicz.github.io/hydrapp/)
 
-* HTML 5
-* CSS 3
-* JavaScript ECMAScript 2015+ (ES6+)
+## What I've used here:
 
-## How to use it?
+✔ Semantic HTML5 <br/>
+✔ CSS3 and SASS <br/>
+✔ BEM methodology <br/>
+✔ JavaScript ECMAScript 2015+ (ES6+)
+
+## How to run it locally?
 
 Clone it to your computer, go to the project directory in console and type `npm install`.
 
