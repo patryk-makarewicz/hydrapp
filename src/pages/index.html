@@ -153,11 +153,32 @@
       <header class="header">Hydrapp</header>
       <div class="glass">
         <img src="../assets/img/water-glass.svg" alt="Image glass of water" />
-        <p class="number number--js">
-        </p>
+        <p class="number number--js"></p>
       </div>
-      <button class="button__add button__add--js"><span class="shadow">add glass</span></button>
-      <button class="button__remove button__remove--js"><span class="shadow">remove glass</span></button>
+      <button class="button__add button__add--js">
+        <span class="shadow">add glass</span>
+      </button>
+      <button class="button__remove button__remove--js">
+        <span class="shadow">remove glass</span>
+      </button>
+      <button class="button__history button__history--js">history 🕔</button>
     </main>
+    <div class="history history--js">
+      <div class="history__icon">
+        ✖
+      </div>
+      <table class="history__table">
+        <caption class="history__header">
+          History
+        </caption>
+        <thead class="head">
+          <tr class="head__row">
+            <th class="head__row head__row--date">Date</th>
+            <th class="head__row head__row--glasses">Number of glasses</th>
+          </tr>
+        </thead>
+        <tbody class="tbody tbody--js"></tbody>
+      </table>
+    </div>
   </body>
 </html>
