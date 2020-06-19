@@ -7,9 +7,11 @@ registerSW();
 const plus = document.querySelector('.button__add--js');
 const minus = document.querySelector('.button__remove--js');
 const number = document.querySelector('.number--js');
+
+const glass = localStorage.getItem('glass');
+
 const key = new Date().toISOString().slice(0, 10);
 let count = 0;
-const glass = localStorage.getItem('glass');
 
 
 if (glass) {
