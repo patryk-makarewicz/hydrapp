@@ -2,7 +2,7 @@
 
 # General info
 
-Hydrapp - app for counting your drinking water per day.
+Hydrapp - app counts the number of glasses of water consumed.
 
 ## Languages
 
