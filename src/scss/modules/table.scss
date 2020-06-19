@@ -1,0 +1,18 @@
+.head {
+    border: 1px solid #ffffff;
+    background: #F3F3F3;
+    &__row {
+      padding: 16px 0;
+    }
+  }
+  
+  .tbody {
+    font-size: 14px;
+    font-weight: 400;
+    overflow: scroll;
+    text-align: center;
+    &__data {
+      padding: 16px;
+      border-bottom: 1px solid #F3F3F3;
+    }
+  }
