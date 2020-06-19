@@ -42,6 +42,17 @@ body {
   justify-content: center;
 }
 
+.number {
+  position: absolute;
+  font-weight: 500;
+  font-size: 112px;
+  line-height: 131px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
 .button__add {
   display: block;
   margin: 48px auto 37px auto;
