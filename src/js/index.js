@@ -32,7 +32,7 @@ plus.addEventListener('click', () => {
     }
     number.innerHTML = count;
     localStorage.setItem(key, count);
-    location.reload();
+    location.reload();                         //for history
 });
 
 minus.addEventListener('click', () => {
@@ -45,13 +45,11 @@ minus.addEventListener('click', () => {
 });
 
 
-historyButton.addEventListener('click', (e) => {
-  e.preventDefault();
+historyButton.addEventListener('click', () => {
   history.classList.add('history--visible');
 });
 
-closeIcon.addEventListener('click', (e) => {
-  e.preventDefault();
+closeIcon.addEventListener('click', () => {
   history.classList.remove('history--visible');
 });
 

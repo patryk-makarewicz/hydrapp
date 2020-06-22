@@ -3,13 +3,12 @@
     color: black;
     height: 50vh;
     position: absolute;
-    bottom: -50vh;
     display: none;
-    opacity: 0;
     overflow: scroll;
     margin: 0;
-    transition: bottom 1s ease-in-out, display 1s ease-in-out, opacity 1s ease-in-out;
-    width: 375px;
+    min-width: 320px;
+    max-width: 375px;
+    border-radius: 4px;
     z-index: 9999;
     &--visible {
       bottom: 0;
@@ -18,7 +17,7 @@
     }
     &__table {
       width: 80%;
-      margin: 48px auto 0 auto;
+      margin: 0 auto 0 auto;
     }
     &__header {
       margin-bottom: 16px;
@@ -28,6 +27,7 @@
     &__icon {
       text-align: right;
       position: relative;
+      padding: 16px;
     }
     &__close {
       display: block;
