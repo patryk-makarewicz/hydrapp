@@ -12,41 +12,37 @@ const history = document.querySelector('.history--js');
 const closeIcon = document.querySelector('.history__icon');
 const table = document.querySelector('.tbody--js');
 
-const glass = localStorage.getItem('glass');
 
-const key = new Date().toISOString().slice(0, 10);
+const key = new Date().toLocaleString().slice(0, 10);
+
 let count = 0;
+const localStorageVaule = localStorage.getItem(key);
 
-
-if (glass) {
-    number.innerHTML = glass;
-    count = parseInt(glass);
+if (localStorageVaule) {
+    count = localStorageVaule;
 } else {
-    number.innerHTML = count;
+    localStorage.setItem(key, 0);
 }
+number.innerHTML = count;
 
 
 plus.addEventListener('click', () => {
-    if (count >= 99) {
-        count = 99;
-    } else {
-        count = count + 1;
-        number.innerHTML = count;
-        localStorage.setItem('glass', count);
-        location.reload();
+    if (count <= 98) {
+        count++;                               //count = parseInt(count);   zamiana string na liczbę!!!
     }
-})
+    number.innerHTML = count;
+    localStorage.setItem(key, count);
+    location.reload();
+});
 
 minus.addEventListener('click', () => {
-    if (count <= 0) {
-        count = 0;
-    } else {
-        count = count - 1;
-        number.innerHTML = count;
-        localStorage.setItem('glass', count);
-        location.reload();
+    if (count > 0) {
+        count--;
     }
-})
+    number.innerHTML = count;
+    localStorage.setItem(key, count);
+    location.reload();
+});
 
 
 historyButton.addEventListener('click', (e) => {
